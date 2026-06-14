@@ -196,12 +196,11 @@ export default function Projects() {
   const handleOpenModal = (project) => {
     setActiveProject(project);
     setActiveImgIdx(0);
-    document.body.style.overflow = 'hidden'; // Lock background scroll
+    // No body lock needed — fixed overlay covers viewport and handles its own scroll
   };
 
   const handleCloseModal = () => {
     setActiveProject(null);
-    document.body.style.overflow = ''; // Release scroll
   };
 
   const nextImage = (e) => {
@@ -322,6 +321,7 @@ export default function Projects() {
             </g>
           </svg>
         </div>
+        <p className="map-scroll-hint">← Swipe to explore map →</p>
       </div>
 
       {/* Grid Display Filters */}
@@ -487,7 +487,7 @@ export default function Projects() {
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn btn-primary"
-                  style={{ marginTop: '1.5rem', width: '100%', justifyContent: 'center' }}
+                  style={{ marginTop: '1.5rem', justifyContent: 'center' }}
                 >
                   <HardHat size={18} /> Request Similar Construction
                 </a>

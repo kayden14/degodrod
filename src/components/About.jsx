@@ -98,19 +98,29 @@ export default function About() {
           <h3 style={{ fontSize: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '1rem' }}>
             Leadership Statement
           </h3>
+
+          {/* CEO Portrait — Prominent Showcase */}
+          <div className="ceo-portrait-card">
+            <div className="ceo-portrait-frame">
+              <img
+                src="/assets/ceo_portrait.png"
+                alt="Engr. Ugwo Godwin David — Managing Director & CEO of DEGODROD Construction"
+                className="ceo-portrait-img"
+              />
+              <div className="ceo-portrait-badge">
+                <span>MD &amp; CEO</span>
+              </div>
+            </div>
+            <div className="ceo-identity">
+              <h4 className="ceo-name">Engr. Ugwo Godwin David</h4>
+              <p className="ceo-title">Managing Director &amp; Chief Executive Officer</p>
+              <p className="ceo-coren">COREN Registered Civil Engineer</p>
+            </div>
+          </div>
+
           <p className="profile-quote">
             "We believe that civil engineering is more than just stacking concrete; it is the physical foundation upon which communities grow and families thrive. At DEGODROD, every pile driven and every block vibrated is a testament to our commitment to Nigeria's structural future."
           </p>
-
-          <div className="profile-info">
-            <div className="profile-avatar">
-              MD
-            </div>
-            <div className="profile-name">
-              <h4>Engr. Ugwo Godwin David</h4>
-              <p>Managing Director & CEO</p>
-            </div>
-          </div>
 
           <div className="stats-grid">
             <div className="stat-item">

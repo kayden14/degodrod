@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { HardHat, Menu, X, PhoneCall } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
-export default function Header() {
+export default function Header({ theme, toggleTheme }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -104,12 +105,15 @@ export default function Header() {
             </a>
           </nav>
 
-          <button 
-            className="nav-cta"
-            onClick={() => handleLinkClick('estimator')}
-          >
-            Get an Estimate
-          </button>
+          <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+            <button 
+              className="nav-cta"
+              onClick={() => handleLinkClick('estimator')}
+            >
+              Get an Estimate
+            </button>
+          </div>
 
           <button className="mobile-menu-btn" onClick={toggleMobileMenu} aria-label="Toggle Menu">
             <Menu />
