@@ -443,7 +443,7 @@ export default function PropertiesForSale() {
                       name="name"
                       value={requestForm.name}
                       onChange={handleRequestChange}
-                      placeholder="e.g. John Doe"
+                      placeholder="e.g. Emeka Okafor"
                       className="request-form-input"
                       required
                     />

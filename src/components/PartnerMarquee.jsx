@@ -13,11 +13,18 @@ export default function PartnerMarquee() {
   ];
 
   return (
-    <div className="partner-marquee-container">
+    <div className="partner-marquee-container" aria-label="Accredited & Compliant With">
       <div className="marquee-content">
-        {/* Double the list to create a seamless loop */}
-        {[...partners, ...partners].map((partner, idx) => (
-          <div className="marquee-item" key={idx}>
+        {/* First copy — visible to screen readers */}
+        {partners.map((partner, idx) => (
+          <div className="marquee-item" key={`a-${idx}`}>
+            <span className="marquee-dot" aria-hidden="true"></span>
+            <span className="marquee-text">{partner}</span>
+          </div>
+        ))}
+        {/* Second copy — purely decorative, hidden from screen readers */}
+        {partners.map((partner, idx) => (
+          <div className="marquee-item" key={`b-${idx}`} aria-hidden="true">
             <span className="marquee-dot"></span>
             <span className="marquee-text">{partner}</span>
           </div>

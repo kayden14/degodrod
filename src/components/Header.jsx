@@ -80,7 +80,7 @@ export default function Header({ theme, toggleTheme }) {
               className={`nav-link ${activeSection === 'services' ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); handleLinkClick('services'); }}
             >
-              Services
+              Engineering
             </a>
             <a 
               href="#portfolio" 
@@ -94,7 +94,7 @@ export default function Header({ theme, toggleTheme }) {
               className={`nav-link ${activeSection === 'properties' ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); handleLinkClick('properties'); }}
             >
-              Properties
+              Real Estate
             </a>
             <a 
               href="#estimator" 
@@ -155,7 +155,7 @@ export default function Header({ theme, toggleTheme }) {
             className={`mobile-nav-link ${activeSection === 'services' ? 'active' : ''}`}
             onClick={(e) => { e.preventDefault(); handleLinkClick('services'); }}
           >
-            Services
+            Engineering
           </a>
           <a 
             href="#portfolio" 
@@ -169,7 +169,7 @@ export default function Header({ theme, toggleTheme }) {
             className={`mobile-nav-link ${activeSection === 'properties' ? 'active' : ''}`}
             onClick={(e) => { e.preventDefault(); handleLinkClick('properties'); }}
           >
-            Properties
+            Real Estate
           </a>
           <a 
             href="#estimator" 
