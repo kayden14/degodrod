@@ -63,6 +63,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
+              <a href="#properties" className="footer-menu-link" onClick={(e) => { e.preventDefault(); handleScrollTo('properties'); }}>
+                Properties for Sale
+              </a>
+            </li>
+            <li>
               <a href="#estimator" className="footer-menu-link" onClick={(e) => { e.preventDefault(); handleScrollTo('estimator'); }}>
                 Project Estimator
               </a>
@@ -76,11 +81,18 @@ export default function Footer() {
         </div>
 
         <div className="footer-links">
-          <h4 className="footer-links-title">Contact Office</h4>
-          <ul className="footer-menu" style={{ pointerEvents: 'none' }}>
+          <h4 className="footer-links-title">Lagos Office</h4>
+          <ul className="footer-menu" style={{ pointerEvents: 'none', marginBottom: '1.5rem' }}>
             <li className="footer-menu-link">Lagos, Nigeria</li>
             <li className="footer-menu-link">progodsuccessservices@gmail.com</li>
             <li className="footer-menu-link">+234 816 319 3688</li>
+            <li className="footer-menu-link">Mon - Sat: 8:00 AM - 6:00 PM</li>
+          </ul>
+          
+          <h4 className="footer-links-title">Osun State Office</h4>
+          <ul className="footer-menu" style={{ pointerEvents: 'none' }}>
+            <li className="footer-menu-link">Parakin Obalufe, Osun State</li>
+            <li className="footer-menu-link">+234 806 788 8011</li>
             <li className="footer-menu-link">Mon - Sat: 8:00 AM - 6:00 PM</li>
           </ul>
         </div>

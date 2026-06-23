@@ -10,6 +10,7 @@ import FeaturedMedia from './components/FeaturedMedia';
 import Services from './components/Services';
 import BeforeAfterSlider from './components/BeforeAfterSlider';
 import Projects from './components/Projects';
+import PropertiesForSale from './components/PropertiesForSale';
 import Testimonials from './components/Testimonials';
 import Estimator from './components/Estimator';
 import FAQ from './components/FAQ';
@@ -72,6 +73,7 @@ function App() {
         <Services />
         <BeforeAfterSlider />
         <Projects />
+        <PropertiesForSale />
         <Testimonials />
         <Estimator />
         <FAQ />

@@ -59,33 +59,73 @@ export default function Contact() {
               </div>
             </a>
 
-            <a href="tel:+2348163193688" className="contact-item-link">
-              <div className="contact-item-icon">
-                <Phone />
-              </div>
-              <div className="contact-item-text">
-                <span className="contact-item-label">Call Direct</span>
-                <span className="contact-item-value">+234 816 319 3688</span>
-              </div>
-            </a>
+            {/* Lagos Head Office */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1rem' }}>
+              <h4 style={{ fontSize: '0.9rem', color: 'var(--accent-gold)', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '0.25rem', fontWeight: '700' }}>Lagos Head Office</h4>
+              
+              <a href="tel:+2348163193688" className="contact-item-link">
+                <div className="contact-item-icon">
+                  <Phone />
+                </div>
+                <div className="contact-item-text">
+                  <span className="contact-item-label">Call Direct</span>
+                  <span className="contact-item-value">+234 816 319 3688</span>
+                </div>
+              </a>
 
-            <a href="https://wa.me/2348163193688?text=Hello%20DEGODROD%20Construction%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="contact-item-link">
-              <div className="contact-item-icon" style={{ backgroundColor: 'rgba(37, 211, 102, 0.1)', color: '#25d366' }}>
-                <MessageSquare />
-              </div>
-              <div className="contact-item-text">
-                <span className="contact-item-label">WhatsApp Chat</span>
-                <span className="contact-item-value">+234 816 319 3688</span>
-              </div>
-            </a>
+              <a href="https://wa.me/2348163193688?text=Hello%20DEGODROD%20Construction%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="contact-item-link">
+                <div className="contact-item-icon" style={{ backgroundColor: 'rgba(37, 211, 102, 0.1)', color: '#25d366' }}>
+                  <MessageSquare />
+                </div>
+                <div className="contact-item-text">
+                  <span className="contact-item-label">WhatsApp Chat</span>
+                  <span className="contact-item-value">+234 816 319 3688</span>
+                </div>
+              </a>
 
-            <div className="contact-item-link" style={{ cursor: 'default' }}>
-              <div className="contact-item-icon">
-                <MapPin />
+              <div className="contact-item-link" style={{ cursor: 'default' }}>
+                <div className="contact-item-icon">
+                  <MapPin />
+                </div>
+                <div className="contact-item-text">
+                  <span className="contact-item-label">Office Location</span>
+                  <span className="contact-item-value">Lagos, Nigeria</span>
+                </div>
               </div>
-              <div className="contact-item-text">
-                <span className="contact-item-label">Office Location</span>
-                <span className="contact-item-value">Lagos, Nigeria</span>
+            </div>
+
+            {/* Osun State Office */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1.5rem' }}>
+              <h4 style={{ fontSize: '0.9rem', color: 'var(--accent-gold)', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '0.25rem', fontWeight: '700' }}>Osun State Office</h4>
+              
+              <a href="tel:+2348067888011" className="contact-item-link">
+                <div className="contact-item-icon">
+                  <Phone />
+                </div>
+                <div className="contact-item-text">
+                  <span className="contact-item-label">Call Direct</span>
+                  <span className="contact-item-value">+234 806 788 8011</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/2348067888011?text=Hello%20DEGODROD%20Construction%2C%20I%20would%20like%20to%20inquire%20about%20your%20Osun%20State%20services%20and%20properties." target="_blank" rel="noopener noreferrer" className="contact-item-link">
+                <div className="contact-item-icon" style={{ backgroundColor: 'rgba(37, 211, 102, 0.1)', color: '#25d366' }}>
+                  <MessageSquare />
+                </div>
+                <div className="contact-item-text">
+                  <span className="contact-item-label">WhatsApp Chat</span>
+                  <span className="contact-item-value">+234 806 788 8011</span>
+                </div>
+              </a>
+
+              <div className="contact-item-link" style={{ cursor: 'default' }}>
+                <div className="contact-item-icon">
+                  <MapPin />
+                </div>
+                <div className="contact-item-text">
+                  <span className="contact-item-label">Office Location</span>
+                  <span className="contact-item-value">Parakin Obalufe, Osun State, Nigeria</span>
+                </div>
               </div>
             </div>
           </div>

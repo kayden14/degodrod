@@ -16,7 +16,7 @@ export default function Header({ theme, toggleTheme }) {
       }
 
       // Check active section
-      const sections = ['home', 'about', 'services', 'portfolio', 'estimator', 'contact'];
+      const sections = ['home', 'about', 'services', 'portfolio', 'properties', 'estimator', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -90,6 +90,13 @@ export default function Header({ theme, toggleTheme }) {
               Projects
             </a>
             <a 
+              href="#properties" 
+              className={`nav-link ${activeSection === 'properties' ? 'active' : ''}`}
+              onClick={(e) => { e.preventDefault(); handleLinkClick('properties'); }}
+            >
+              Properties
+            </a>
+            <a 
               href="#estimator" 
               className={`nav-link ${activeSection === 'estimator' ? 'active' : ''}`}
               onClick={(e) => { e.preventDefault(); handleLinkClick('estimator'); }}
@@ -156,6 +163,13 @@ export default function Header({ theme, toggleTheme }) {
             onClick={(e) => { e.preventDefault(); handleLinkClick('portfolio'); }}
           >
             Projects
+          </a>
+          <a 
+            href="#properties" 
+            className={`mobile-nav-link ${activeSection === 'properties' ? 'active' : ''}`}
+            onClick={(e) => { e.preventDefault(); handleLinkClick('properties'); }}
+          >
+            Properties
           </a>
           <a 
             href="#estimator" 
