@@ -263,7 +263,7 @@ export default function PropertiesForSale() {
       type: 'Serviced Apartment',
       title: 'Premium 3-Bedroom Luxury Apartment',
       location: 'Lekki Phase 1, Lagos',
-      price: '₦12,000,000 / Year',
+      price: '₦5,500,000 / Year',
       specs: [
         { icon: <Home size={16} />, label: '3 Bed | 4 Bath' },
         { icon: <Maximize2 size={16} />, label: '250 SQM' },
@@ -274,13 +274,14 @@ export default function PropertiesForSale() {
     },
     {
       id: 102,
-      image: '/assets/structural_renovation.jpg',
-      isVideo: false,
+      video: '/assets/before_after_2.mp4',
+      poster: '/assets/structural_renovation.jpg',
+      isVideo: true,
       badge: 'Hot Deal',
       type: 'Commercial Space',
       title: 'Executive Open-Plan Office Suite',
       location: 'Victoria Island, Lagos',
-      price: '₦150,000 / sqm / Yr',
+      price: '₦45,000 / sqm / Yr',
       specs: [
         { icon: <Landmark size={16} />, label: 'Fiber Internet' },
         { icon: <Maximize2 size={16} />, label: '400 SQM' },
@@ -297,7 +298,7 @@ export default function PropertiesForSale() {
       type: 'Waterfront Penthouse',
       title: 'Waterfront 4-Bedroom Serviced Penthouse',
       location: 'Ikoyi, Lagos',
-      price: '₦22,000,000 / Year',
+      price: '₦9,500,000 / Year',
       specs: [
         { icon: <Home size={16} />, label: '4 Bed | 5 Bath' },
         { icon: <Maximize2 size={16} />, label: '480 SQM' },
@@ -403,9 +404,13 @@ export default function PropertiesForSale() {
           )}
           
           <div className="properties-grid">
-            {propertiesRent.map((prop) => (
-              <PropertyImageCard key={prop.id} prop={prop} />
-            ))}
+            {propertiesRent.map((prop) =>
+              prop.isVideo ? (
+                <PropertyVideoCard key={prop.id} prop={prop} />
+              ) : (
+                <PropertyImageCard key={prop.id} prop={prop} />
+              )
+            )}
           </div>
         </div>
       )}
