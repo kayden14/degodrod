@@ -140,7 +140,7 @@ export default function Contact() {
                 name="name" 
                 value={formData.name} 
                 onChange={handleChange} 
-                placeholder="John Doe" 
+                placeholder="Godwin David" 
                 className="form-input" 
                 required 
               />
