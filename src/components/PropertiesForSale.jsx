@@ -274,7 +274,7 @@ export default function PropertiesForSale() {
     },
     {
       id: 102,
-      video: '/assets/before_after_2.mp4',
+      video: '/assets/office.mp4',
       poster: '/assets/structural_renovation.jpg',
       isVideo: true,
       badge: 'Hot Deal',
