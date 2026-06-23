@@ -91,7 +91,7 @@ export default function Footer() {
           
           <h4 className="footer-links-title">Osun State Office</h4>
           <ul className="footer-menu" style={{ pointerEvents: 'none' }}>
-            <li className="footer-menu-link">Adedoyin Way, Old Intel Area</li>
+            <li className="footer-menu-link">Adedoyin Way, Old Nitel Area</li>
             <li className="footer-menu-link">Parakin-Obalufe, Ile-Ife, Osun State</li>
             <li className="footer-menu-link">+234 806 788 8011</li>
             <li className="footer-menu-link">Mon - Sat: 8:00 AM - 6:00 PM</li>
