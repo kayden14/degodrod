@@ -26,7 +26,17 @@ const INITIAL_TESTIMONIALS = [
 ];
 
 export default function Testimonials() {
-  const [testimonials, setTestimonials] = useState(INITIAL_TESTIMONIALS);
+  // Load saved user reviews from localStorage on mount
+  const [testimonials, setTestimonials] = useState(() => {
+    try {
+      const saved = localStorage.getItem('degodrod-user-reviews');
+      if (saved) {
+        const userReviews = JSON.parse(saved);
+        return [...INITIAL_TESTIMONIALS, ...userReviews];
+      }
+    } catch (e) { /* ignore corrupt data */ }
+    return INITIAL_TESTIMONIALS;
+  });
   const [currentIdx, setCurrentIdx] = useState(0);
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -77,6 +87,13 @@ export default function Testimonials() {
     setIsFormOpen(false);
     setSubmitted(true);
     setFormData({ author: '', role: '', company: '', quote: '', rating: 0 });
+
+    // Persist user reviews to localStorage (only the non-initial ones)
+    try {
+      const saved = localStorage.getItem('degodrod-user-reviews');
+      const existing = saved ? JSON.parse(saved) : [];
+      localStorage.setItem('degodrod-user-reviews', JSON.stringify([...existing, newTestimonial]));
+    } catch (e) { /* storage full or blocked */ }
 
     setTimeout(() => setSubmitted(false), 5000);
   };
