@@ -9,8 +9,8 @@ export default function Projects() {
   const projectsData = [
     {
       id: 1,
-      image: '/assets/hero_bg.png',
-      gallery: ['/assets/hero_bg.png', '/assets/piling_drilling.png', '/assets/luxury_property.png'],
+      image: '/assets/lekki_commercial_building.jpg',
+      gallery: ['/assets/lekki_commercial_building.jpg', '/assets/Ikoyi Luxury Towers Foundation.jpg', '/assets/hero_bg.png'],
       title: "Lekki Commercial Skyscraper",
       category: "engineering",
       badge: "Civil Engineering",
@@ -29,8 +29,8 @@ export default function Projects() {
     },
     {
       id: 2,
-      image: '/assets/blocks_interlock.png',
-      gallery: ['/assets/blocks_interlock.png', '/assets/luxury_property.png', '/assets/hero_bg.png'],
+      image: '/assets/Victoria Island Estate Paving.jpg',
+      gallery: ['/assets/Victoria Island Estate Paving.jpg', '/assets/Victoria Island Commercial Plot.jpg', '/assets/hero_bg.png'],
       title: "Victoria Island Estate Paving",
       category: "manufacturing",
       badge: "Blocks & Interlocks",
@@ -49,8 +49,8 @@ export default function Projects() {
     },
     {
       id: 3,
-      image: '/assets/piling_drilling.png',
-      gallery: ['/assets/piling_drilling.png', '/assets/hero_bg.png', '/assets/luxury_property.png'],
+      image: '/assets/Ikoyi Luxury Towers Foundation.jpg',
+      gallery: ['/assets/Ikoyi Luxury Towers Foundation.jpg', '/assets/lekki_commercial_building.jpg', '/assets/piling_drilling.png'],
       title: "Ikoyi Luxury Towers Foundation",
       category: "engineering",
       badge: "Piling & Drilling",
@@ -69,8 +69,8 @@ export default function Projects() {
     },
     {
       id: 4,
-      image: '/assets/luxury_property.png',
-      gallery: ['/assets/luxury_property.png', '/assets/blocks_interlock.png', '/assets/hero_bg.png'],
+      image: '/assets/banana_island_smart_villas.jpg',
+      gallery: ['/assets/banana_island_smart_villas.jpg', '/assets/luxury_property.png', '/assets/fcf293674029e7372ce16b2b52781ed0.jpg'],
       title: "Banana Island Smart Villas",
       category: "properties",
       badge: "Property Sales",
@@ -89,8 +89,8 @@ export default function Projects() {
     },
     {
       id: 5,
-      image: '/assets/piling_drilling.png',
-      gallery: ['/assets/piling_drilling.png', '/assets/blocks_interlock.png', '/assets/hero_bg.png'],
+      image: '/assets/Ajah Road Drainage & Culvert Works.jpg',
+      gallery: ['/assets/Ajah Road Drainage & Culvert Works.jpg', '/assets/Lekki Shoreline Retaining Wall.jpg', '/assets/hero_bg.png'],
       title: "Ajah Road Drainage & Culvert Works",
       category: "engineering",
       badge: "Civil Engineering",
@@ -109,8 +109,8 @@ export default function Projects() {
     },
     {
       id: 6,
-      image: '/assets/hero_bg.png',
-      gallery: ['/assets/hero_bg.png', '/assets/blocks_interlock.png', '/assets/piling_drilling.png'],
+      image: '/assets/Ikeja Industrial Warehouse Complex.jpg',
+      gallery: ['/assets/Ikeja Industrial Warehouse Complex.jpg', '/assets/structural_renovation.jpg', '/assets/hero_bg.png'],
       title: "Ikeja Industrial Warehouse Complex",
       category: "engineering",
       badge: "Civil Engineering",
@@ -129,8 +129,8 @@ export default function Projects() {
     },
     {
       id: 7,
-      image: '/assets/blocks_interlock.png',
-      gallery: ['/assets/blocks_interlock.png', '/assets/hero_bg.png', '/assets/luxury_property.png'],
+      image: '/assets/Alimosho Mass Housing — Block Supply.jpg',
+      gallery: ['/assets/Alimosho Mass Housing — Block Supply.jpg', '/assets/blocks_interlock.png', '/assets/hero_bg.png'],
       title: "Alimosho Mass Housing — Block Supply",
       category: "manufacturing",
       badge: "Blocks & Interlocks",
@@ -149,8 +149,8 @@ export default function Projects() {
     },
     {
       id: 8,
-      image: '/assets/luxury_property.png',
-      gallery: ['/assets/luxury_property.png', '/assets/hero_bg.png', '/assets/blocks_interlock.png'],
+      image: '/assets/structural_renovation.jpg',
+      gallery: ['/assets/structural_renovation.jpg', '/assets/Ikeja Industrial Warehouse Complex.jpg', '/assets/hero_bg.png'],
       title: "Yaba Tech Hub — Structural Renovation",
       category: "consulting",
       badge: "Consulting",
@@ -169,8 +169,8 @@ export default function Projects() {
     },
     {
       id: 9,
-      image: '/assets/piling_drilling.png',
-      gallery: ['/assets/piling_drilling.png', '/assets/luxury_property.png', '/assets/hero_bg.png'],
+      image: '/assets/Lekki Shoreline Retaining Wall.jpg',
+      gallery: ['/assets/Lekki Shoreline Retaining Wall.jpg', '/assets/Ajah Road Drainage & Culvert Works.jpg', '/assets/piling_drilling.png'],
       title: "Lekki Shoreline Retaining Wall",
       category: "engineering",
       badge: "Civil Engineering",

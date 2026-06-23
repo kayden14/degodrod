@@ -124,7 +124,7 @@ export default function Contact() {
                 </div>
                 <div className="contact-item-text">
                   <span className="contact-item-label">Office Location</span>
-                  <span className="contact-item-value">Parakin Obalufe, Osun State, Nigeria</span>
+                  <span className="contact-item-value">Adedoyin Way, Old Intel Area,<br />Parakin-Obalufe, Ile-Ife, Osun State</span>
                 </div>
               </div>
             </div>
