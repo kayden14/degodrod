@@ -187,6 +187,13 @@ export default function Header({ theme, toggleTheme }) {
           </a>
         </div>
 
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto', marginBottom: '1rem' }}>
+          <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+            {theme === 'dark' ? 'Dark' : 'Light'} Mode
+          </span>
+          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+        </div>
+
         <a 
           href="#estimator" 
           className="mobile-nav-cta"

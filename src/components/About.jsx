@@ -95,7 +95,7 @@ export default function About() {
         </div>
 
         <div className="about-profile">
-          <h3 style={{ fontSize: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.05)', paddingBottom: '1rem' }}>
+          <h3 style={{ fontSize: '1.5rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '1rem' }}>
             Leadership Statement
           </h3>
 
